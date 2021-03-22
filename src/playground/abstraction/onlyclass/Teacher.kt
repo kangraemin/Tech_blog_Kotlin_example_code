@@ -2,19 +2,19 @@ package playground.abstraction.onlyclass
 
 class Teacher {
     fun sayStudentName(student: Student) {
-        println("Hey ! ${student.name}!")
+        print("Hey ! ${student.name}! ")
     }
 
     fun makeStudentToClean(student: Student) {
         when (student) {
             is StudentForFloorCleaning -> {
-                println("바닥 쓸기")
+                println("바닥을 쓸거라")
             }
             is StudentForWindowCleaning -> {
-                println("창문 닦기")
+                println("창문을 닦거라")
             }
             is StudentForBlackboardCleaning -> {
-                println("칠판 닦기")
+                println("칠판을 닦거라")
             }
         }
     }
