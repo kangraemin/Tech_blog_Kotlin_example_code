@@ -22,17 +22,20 @@ fun main() {
     floorStudents.forEach {
         teacher.sayStudentName(it)
         teacher.makeStudentToClean(it)
+        it.startCleanUp()
     }
 
     // 창문 닦이 학생 청소
     windowStudents.forEach {
         teacher.sayStudentName(it)
         teacher.makeStudentToClean(it)
+        it.startCleanUp()
     }
 
     // 칠판 닦이 학생 청소
     blackboardStudents.forEach {
         teacher.sayStudentName(it)
         teacher.makeStudentToClean(it)
+        it.startCleanUp()
     }
 }
